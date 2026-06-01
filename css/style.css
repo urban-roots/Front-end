@@ -1,15 +1,15 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  box-sizing: content-box;
 }
 
 nav {
   background: #7ea8e8;
-  border-bottom: 1px solid #d04545;
+  border-bottom: 1px solid #c8b5b5;
   padding: 0 1.5rem;
   display: flex;
-  justify-content: space-between;
+  justify-content: left;
   height: 100px;
   align-items: center;
 }
@@ -24,12 +24,14 @@ nav {
 .nav-links {
   display: flex;
   gap: 1.5rem;
-  list-style: none;
+  background-color: none;
+  justify-content: right;
 }
 
 .nav-links a {
   text-decoration: none;
-  color: #333;
+  color: #e9dcdc;
+  justify-content: flex-end;
 }
 
 .burger {
@@ -37,8 +39,8 @@ nav {
   flex-direction: column;
   gap: 5px;
   cursor: pointer;
-  background: none;
-  border: none;
+  background: #7ea8e8;
+  border: #7ea8e8;
 }
 
 .burger span {
@@ -50,10 +52,10 @@ nav {
 
 .mobile-menu {
   display: none;
-  flex-direction: column;
-  background: #fff;
+  flex-direction: column-reverse;
+  background: #d3b4b4;
   border-top: 1px solid #ddd;
-  padding: 1rem 1.5rem;
+  padding: 5rem 1.5rem;
   gap: 1rem;
 }
 
