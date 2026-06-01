@@ -5,25 +5,20 @@
 }
 
 nav {
-  background: #fff;
-  border-bottom: 1px solid #ddd;
+  background: #7ea8e8;
+  border-bottom: 1px solid #d04545;
   padding: 0 1.5rem;
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  height: 60px;
+  height: 100px;
+  align-items: center;
 }
 .logo-png {
-  width: 200px;
-  height: 80px;
+  width: 400px;
+  height: 150px;
   text-decoration: #d57373;
   border-color: #333;
-}
-.logo {
-  -size: 100px;
-  font-weight: bold;
-  text-decoration: none;
-  color: #aa3838;
+  left: 200px;
 }
 
 .nav-links {
