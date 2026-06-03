@@ -1,1 +1,81 @@
 /* Código de CSS del index */
+/* Navbar   */
+:root {
+  --fondo: #111;
+  --texto: #fff;
+  --borde: #666;
+}
+
+header {
+  background: var(--fondo);
+}
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  padding: 10px 20px;
+}
+
+.logo {
+  gap: 10px;
+}
+
+.logo img {
+  width: 50px;
+}
+
+.logo span {
+  color: var(--texto);
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-link {
+  color: var(--texto);
+}
+
+.hamburguesa {
+  color: var(--texto);
+  display: none;
+}
+.logo span {
+  color: white;
+}
+
+.nav-link {
+  color: white !important;
+}
+.hamburguesa {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.hamburguesa span {
+  width: 25px;
+  height: 3px;
+  margin-left: 20px;
+  background: white;
+}
+#menu {
+  display: flex;
+  gap: 15px;
+  list-style: none;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .hamburguesa {
+    display: flex;
+  }
+  #menu {
+    gap: 8px;
+  }
+
+  .nav-link {
+    font-size: 0.9rem;
+  }
+}
