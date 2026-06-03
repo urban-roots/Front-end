@@ -60,3 +60,72 @@ header {
   object-fit: cover;
   transition: filter 0.7s ease-out;
 }
+/*  NAVBAR — navbar.css | Urban Roots | Dark theme  */
+
+:root {
+  --nb-bg: #12120e;
+  --nb-border: #2a2a1f;
+  --nb-accent: #7cb87a;
+  --nb-link: #b8b8a8;
+  --nb-hover: #f0ede6;
+}
+
+header {
+  background-color: var(--nb-bg);
+  border-bottom: 1px solid var(--nb-border);
+  position: sticky;
+  top: 0;
+  z-index: 1030;
+}
+
+/* Logo */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  text-decoration: none;
+}
+.logo img {
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
+}
+.logo span {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--nb-hover);
+}
+
+/* Toggler */
+.navbar-toggler {
+  border-color: rgba(255, 255, 255, 0.2);
+}
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(240,237,230,0.85)' stroke-width='2' stroke-linecap='round' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/* Links */
+.nav-link {
+  color: var(--nb-link) !important;
+  border-radius: 6px;
+}
+.nav-link:hover {
+  color: var(--nb-hover) !important;
+  background: rgba(255, 255, 255, 0.06);
+}
+.nav-link.active {
+  color: var(--nb-accent) !important;
+  background: rgba(124, 184, 122, 0.12);
+}
+
+/* Mobile */
+@media (max-width: 767.98px) {
+  .navbar-collapse {
+    border-top: 1px solid var(--nb-border);
+    padding-top: 0.5rem;
+    margin-top: 0.5rem;
+  }
+}
