@@ -4,46 +4,46 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
+
     <link rel="stylesheet" href="css/global.css" />
     <link rel="stylesheet" href="css/index.css" />
 
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
-      crossorigin="anonymous"
-    />
+    <script src="./js/index.js"></script>
 
     <title>Raíces urbanas</title>
   </head>
   <body>
-    <!-- NAVBAR -->
-    <header class="container-fluid py-2">
+    <!-- Header -->
+    <header>
       <nav class="navbar navbar-expand-md">
-        <div class="logo d-flex align-items-center">
+        <!-- Logo + Texto -->
+        <div class="navbar-brand logo">
           <img src="img/logo.png" alt="Logo" />
           <span>Urban Roots</span>
         </div>
 
-        <button class="hamburguesa">
-          <span></span>
-          <span></span>
-          <span></span>
+        <!-- Hamburguesa -->
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+          <span class="navbar-toggler-icon"></span>
         </button>
 
-        <ul id="menu" class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="#">Inicio</a>
-          </li>
+        <!-- Menú -->
+        <div class="collapse navbar-collapse" id="menu">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Inicio</a>
+            </li>
 
-          <li class="nav-item">
-            <a class="nav-link" href="#">Artículos</a>
-          </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Artículos</a>
+            </li>
 
-          <li class="nav-item">
-            <a class="nav-link" href="#">Suscribirse</a>
-          </li>
-        </ul>
+            <li class="nav-item">
+              <a class="nav-link" href="#sub-form">Suscribirse</a>
+            </li>
+          </ul>
+        </div>
       </nav>
     </header>
 
@@ -51,10 +51,7 @@
     <section class="hero">
       <!-- Texto + Botón de suscribirse -->
       <div>
-        <h3>
-          Del barrio al mundo. Exploramos la música, el arte y la identidad que
-          construyeron la cultura urbana uruguaya.
-        </h3>
+        <h3>Del barrio al mundo. Exploramos la música, el arte y la identidad que construyeron la cultura urbana uruguaya.</h3>
         <a href="#sub-form">Suscríbete</a>
       </div>
 
@@ -124,5 +121,6 @@
       </div>
     </section>
   </body>
-  <script src="./js/index.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </html>
