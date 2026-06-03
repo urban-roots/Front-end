@@ -13,6 +13,7 @@
 /* Movimiento del scroll suave al desplazarse con un href en la página */
 body {
   scroll-behavior: smooth;
+  font-family: "Inter", sans-serif;
 }
 
 /* Definir skins */
