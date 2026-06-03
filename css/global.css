@@ -5,49 +5,57 @@
 
 /* Quitar márgenes, padding y tamaños por defecto */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: content-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+}
+
+/* Movimiento del scroll suave al desplazarse con un href en la página */
+body {
+  scroll-behavior: smooth;
 }
 
 /* Definir skins */
 body[data-theme="mural-dark"] {
-    --bg: #0f1320;
-    --surface: #1a1f2e;
-    --border: #2a2f45;
-    --accent1: #c43b8a;
-    --accent2: #b8e04a;
-    --text: #e8e2f5;
-    --muted: #7880a8;
-    --font-title: "Syne", sans-serif;
+  --bg: #0f1320;
+  --surface: #1a1f2e;
+  --border: #2a2f45;
+  --accent1: #c43b8a;
+  --accent2: #b8e04a;
+  --text: #e8e2f5;
+  --muted: #7880a8;
+  --font-title: "Syne", sans-serif;
 }
+
 body[data-theme="mural-light"] {
-    --bg: #f4f2fa;
-    --surface: #eceaf5;
-    --border: #d5d0ec;
-    --accent1: #8e1a6a;
-    --accent2: #5a8000;
-    --text: #0f1320;
-    --muted: #505880;
-    --font-title: "Syne", sans-serif;
+  --bg: #f4f2fa;
+  --surface: #eceaf5;
+  --border: #d5d0ec;
+  --accent1: #8e1a6a;
+  --accent2: #5a8000;
+  --text: #0f1320;
+  --muted: #505880;
+  --font-title: "Syne", sans-serif;
 }
+
 body[data-theme="crepusculo-dark"] {
-    --bg: #1c2230;
-    --surface: #2c3442;
-    --border: #3c4860;
-    --accent1: #5bbfde;
-    --accent2: #d4a847;
-    --text: #eef2f8;
-    --muted: #7890b0;
-    --font-title: "Playfair Display", serif;
+  --bg: #1c2230;
+  --surface: #2c3442;
+  --border: #3c4860;
+  --accent1: #5bbfde;
+  --accent2: #d4a847;
+  --text: #eef2f8;
+  --muted: #7890b0;
+  --font-title: "Playfair Display", serif;
 }
+
 body[data-theme="crepusculo-light"] {
-    --bg: #eef2f8;
-    --surface: #e0e8f4;
-    --border: #c0cedc;
-    --accent1: #1a7a9c;
-    --accent2: #9a7210;
-    --text: #1c2230;
-    --muted: #4a6080;
-    --font-title: "Playfair Display", serif;
+  --bg: #eef2f8;
+  --surface: #e0e8f4;
+  --border: #c0cedc;
+  --accent1: #1a7a9c;
+  --accent2: #9a7210;
+  --text: #1c2230;
+  --muted: #4a6080;
+  --font-title: "Playfair Display", serif;
 }
