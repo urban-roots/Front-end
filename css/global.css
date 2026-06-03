@@ -14,6 +14,19 @@
 body {
   scroll-behavior: smooth;
   font-family: "Inter", sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
+}
+
+/* Aplicar fuente y color a todos los títulos */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-title);
+  color: var(--text);
 }
 
 /* Definir skins */
