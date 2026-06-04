@@ -79,6 +79,18 @@ header {
   }
 }
 
+/* SOBRE NOSOTROS */
+.about h2 {
+  font-weight: 700;
+  color: var(--nb-hover);
+  margin-bottom: 1rem;
+}
+.about-text {
+  color: var(--nb-link);
+  font-weight: 500;
+  line-height: 1.7;
+}
+
 /* Hero section */
 .hero {
   min-height: 40vh;

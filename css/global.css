@@ -28,7 +28,10 @@ h6 {
   font-family: var(--font-title);
   color: var(--text);
 }
-
+.title {
+  font-family: var(--font-title);
+  color: var(--accent1);
+}
 /* Definir skins */
 body[data-theme="mural-dark"] {
   --bg: #0f1320;
