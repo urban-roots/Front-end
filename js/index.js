@@ -45,21 +45,12 @@ document.addEventListener("DOMContentLoaded", () => {
   // Configurar tema de colores en la página
   setupTema();
 
-  // Cambiar de imagen cada 30 segundos
-  setInterval(updateHeroImage, 30000);
-});
-/*
-  ============================================================
-  NAVBAR  —  navbar.js
-  Bootstrap 5 gestiona toggle y dropdown de forma nativa.
-  Solo se añaden comportamientos extra aquí.
-  ============================================================
-*/
-
-document.addEventListener("DOMContentLoaded", () => {
+  /**
+   * Header
+   */
   const menu = document.getElementById("menu");
 
-  /* ── 1. Cierra el menú mobile al pulsar un enlace ──────── */
+  // Cerrar menú al seleccionar una opción en tablet
   menu.querySelectorAll(".nav-link").forEach((link) => {
     link.addEventListener("click", () => {
       if (window.innerWidth < 768) {
@@ -68,11 +59,10 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  /* ── 2. Marca el enlace activo según la URL actual ─────── */
-  const path = window.location.pathname;
-  menu.querySelectorAll(".nav-link").forEach((link) => {
-    if (link.getAttribute("href") === path) {
-      link.classList.add("active");
-    }
-  });
+  /**
+   * Hero Section
+   */
+
+  // Cambiar de imagen cada 30 segundos
+  setInterval(updateHeroImage, 30000);
 });
