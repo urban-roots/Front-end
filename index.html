@@ -200,40 +200,89 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-dark text-white py-5">
+    <footer class="py-5">
       <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-12 col-md-6">
-            <!-- Campo Nombre -->
-            <div class="mb-3">
-              <label for="nombre" class="form-label">Nombre</label>
-              <input
-                type="text"
-                class="form-control"
-                id="nombre"
-                placeholder="Tu nombre"
-              />
-            </div>
-            <!-- Campo Email -->
-            <div class="mb-3">
-              <label for="email" class="form-label">Email</label>
-              <input
-                type="email"
-                class="form-control"
-                id="email"
-                placeholder="tu@email.com"
-              />
-            </div>
-            <!-- Botón -->
-            <div class="d-grid">
-              <button type="button" class="btn btn-primary">
-                Suscribirse al newsletter
+        <div class="row g-5">
+          <!-- Columna 1: Newsletter -->
+          <div class="col-12 col-md-4" id="sub-form">
+            <h2 class="title footer-col-title mb-2">Newsletter</h2>
+            <p class="footer-muted mb-4">
+              Recibí los mejores artículos directo en tu casilla, sin spam.
+            </p>
+            <div id="alertaNewsletter" class="mb-3"></div>
+            <form id="formNewsletter" novalidate>
+              <div class="mb-3">
+                <label for="subNombre" class="form-label">Nombre</label>
+                <input
+                  type="text"
+                  id="subNombre"
+                  name="subNombre"
+                  class="form-control"
+                  placeholder="Tu nombre"
+                />
+              </div>
+              <div class="mb-4">
+                <label for="subEmail" class="form-label">Email</label>
+                <input
+                  type="email"
+                  id="subEmail"
+                  name="subEmail"
+                  class="form-control"
+                  placeholder="tu@email.com"
+                />
+              </div>
+              <div class="d-grid">
+                <button type="submit" class="btn btn-lg" id="btnSuscribir">
+                  Suscribirme
+                </button>
+              </div>
+            </form>
+          </div>
+          <!-- Columna 2: Selector de tema -->
+          <div class="col-12 col-md-4">
+            <h2 class="title footer-col-title mb-2">Apariencia</h2>
+            <p class="footer-muted mb-4">Elegí el tema que más te guste.</p>
+            <div class="dropdown">
+              <button
+                class="btn btn-lg w-100 dropdown-toggle"
+                id="dropdownTema"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Tema actual
               </button>
+              <ul class="dropdown-menu w-100" aria-labelledby="dropdownTema">
+                <li><h6 class="dropdown-header">Mural Urbano</h6></li>
+                <li>
+                  <a class="dropdown-item" href="#" data-tema="mural-dark"
+                    >Oscuro</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#" data-tema="mural-light"
+                    >Claro</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li><h6 class="dropdown-header">Crepúsculo Rioplatense</h6></li>
+                <li>
+                  <a class="dropdown-item" href="#" data-tema="crepusculo-dark"
+                    >Oscuro</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#" data-tema="crepusculo-light"
+                    >Claro</a
+                  >
+                </li>
+              </ul>
             </div>
           </div>
         </div>
-        <!-- Copyright -->
-        <p>© 2026 Urban Roots. Todos los derechos reservados.</p>
+        <hr class="footer-divider mt-5" />
+        <p class="footer-copyright mt-3">
+          © 2026 Urban Roots. Todos los derechos reservados.
+        </p>
       </div>
     </footer>
   </body>
