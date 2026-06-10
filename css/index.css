@@ -224,3 +224,116 @@ header {
 .articulos-grid .card-link:hover {
   gap: 0.7rem;
 }
+
+/* Footer */
+footer {
+  background-color: var(--surface);
+  border-top: 1px solid var(--border);
+}
+
+.footer-col-title {
+  font-size: 1.1rem;
+}
+
+.footer-muted {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+footer .form-label {
+  color: var(--muted);
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+footer .form-control {
+  background-color: var(--bg);
+  border-color: var(--border);
+  color: var(--text);
+}
+
+footer .form-control:focus {
+  background-color: var(--bg);
+  border-color: var(--accent1);
+  color: var(--text);
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent1) 20%, transparent);
+}
+
+footer .form-control::placeholder {
+  color: var(--muted);
+  opacity: 0.6;
+}
+
+footer #btnSuscribir {
+  background-color: var(--accent1);
+  color: var(--bg);
+  border: 2px solid var(--accent1);
+  font-family: var(--font-title);
+  letter-spacing: 0.03em;
+  transition: all 0.25s ease-out;
+}
+
+footer #btnSuscribir:hover {
+  background-color: transparent;
+  color: var(--accent1);
+}
+
+footer #dropdownTema {
+  background-color: var(--bg);
+  border: 1px solid var(--border);
+  color: var(--text);
+  text-align: left;
+  transition: border-color 0.2s ease;
+  white-space: nowrap;
+  font-size: 1.5vh;
+}
+
+footer #dropdownTema:hover,
+footer #dropdownTema:focus {
+  border-color: var(--accent1);
+  color: var(--text);
+  background-color: var(--bg);
+  box-shadow: none;
+}
+
+footer .dropdown-menu {
+  background-color: var(--surface);
+  border-color: var(--border);
+  overflow: hidden;
+}
+
+footer .dropdown-item {
+  color: var(--text);
+}
+
+footer .dropdown-item:hover,
+footer .dropdown-item.active {
+  background-color: var(--accent1);
+  color: var(--bg);
+}
+
+footer .dropdown-header {
+  color: var(--muted);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+footer .dropdown-divider {
+  border-color: var(--border);
+}
+
+#alertaNewsletter {
+  display: none;
+}
+
+.footer-divider {
+  border-color: var(--border);
+}
+
+.footer-copyright {
+  color: var(--muted);
+  font-size: 0.8rem;
+  text-align: right;
+}

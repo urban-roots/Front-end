@@ -65,4 +65,58 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Cambiar de imagen cada 30 segundos
   setInterval(updateHeroImage, 30000);
+
+  /**
+   * Formulario Newsletter
+   */
+  function showAlert(message, type) {
+    const alerta = document.getElementById("alertaNewsletter");
+
+    alerta.className = `alert alert-${type} mb-3`;
+    alerta.textContent = message;
+    alerta.style.display = "block";
+  }
+
+  const formNewsletter = document.getElementById("formNewsletter");
+
+  formNewsletter.addEventListener("submit", (e) => {
+    e.preventDefault();
+
+    const name = formNewsletter.subNombre.value.trim();
+    const email = formNewsletter.subEmail.value.trim();
+
+    if (!name || !email) {
+      showAlert("Completá el formulario con tu nombre y email para suscribirte.", "danger");
+      return;
+    }
+
+    showAlert("¡Suscripción confirmada! Bienvenido/a a Urban Roots.", "success");
+    formNewsletter.reset();
+  });
+
+  /**
+   * Dropdown de temas
+   */
+  const dropdownTema = document.getElementById("dropdownTema");
+  const temaLabels = {
+    "mural-dark": "Mural Urbano (Oscuro)",
+    "mural-light": "Mural Urbano (Claro)",
+    "crepusculo-dark": "Crepúsculo Rioplatense (Oscuro)",
+    "crepusculo-light": "Crepúsculo Rioplatense (Claro)",
+  };
+
+  //  Mostrar el tema activo en el botón del dropdown
+  const temaActual = localStorage.getItem("tema");
+  if (temaActual && temaLabels[temaActual]) {
+    dropdownTema.textContent = temaLabels[temaActual];
+  }
+
+  document.querySelectorAll("[data-tema]").forEach((item) => {
+    item.addEventListener("click", (e) => {
+      e.preventDefault();
+      const tema = e.target.dataset.tema;
+      localStorage.setItem("tema", tema);
+      location.reload();
+    });
+  });
 });
