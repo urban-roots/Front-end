@@ -58,30 +58,6 @@
       </nav>
     </header>
 
-    <!-- Seleccionar tema-->
-    <li class="nav-item dropdown">
-      <button class="btn nav-link dropdown-toggle" data-bs-toggle="dropdown">
-        🌙 Tema
-      </button>
-      <ul class="dropdown-menu dropdown-menu-end">
-        <li>
-          <button class="dropdown-item" onclick="setTheme('light')">
-            ☀️ Claro
-          </button>
-        </li>
-        <li>
-          <button class="dropdown-item" onclick="setTheme('dark')">
-            🌙 Oscuro
-          </button>
-        </li>
-        <li>
-          <button class="dropdown-item" onclick="setTheme('system')">
-            💻 Sistema
-          </button>
-        </li>
-      </ul>
-    </li>
-
     <!-- Hero section-->
     <section class="hero">
       <div class="container-fluid">
@@ -200,40 +176,78 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-dark text-white py-5">
+    <footer class="py-5">
       <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-12 col-md-6">
-            <!-- Campo Nombre -->
-            <div class="mb-3">
-              <label for="nombre" class="form-label">Nombre</label>
-              <input
-                type="text"
-                class="form-control"
-                id="nombre"
-                placeholder="Tu nombre"
-              />
-            </div>
-            <!-- Campo Email -->
-            <div class="mb-3">
-              <label for="email" class="form-label">Email</label>
-              <input
-                type="email"
-                class="form-control"
-                id="email"
-                placeholder="tu@email.com"
-              />
-            </div>
-            <!-- Botón -->
-            <div class="d-grid">
-              <button type="button" class="btn btn-primary">
-                Suscribirse al newsletter
-              </button>
-            </div>
+        <form id="form-contacto">
+          <div class="mb-3">
+            <label for="nombre" class="form-label">Nombre completo</label>
+            <input
+              type="text"
+              class="form-control"
+              id="nombre"
+              name="nombre"
+              placeholder="Escribe tu nombre completo"
+              required
+            />
           </div>
-        </div>
-        <!-- Copyright -->
-        <p>© 2026 Urban Roots. Todos los derechos reservados.</p>
+
+          <div class="mb-3">
+            <label for="email" class="form-label">Correo electrónico</label>
+            <input
+              type="email"
+              class="form-control"
+              id="email"
+              name="email"
+              placeholder="tu@email.com"
+              required
+            />
+          </div>
+
+          <div class="mb-3">
+            <label for="mensaje" class="form-label">Mensaje</label>
+            <textarea
+              class="form-control"
+              id="mensaje"
+              name="mensaje"
+              rows="5"
+              placeholder="Escribe tu mensaje aca..."
+            ></textarea>
+          </div>
+
+          dropwdown de opciones
+          <div class="mb-3">
+            <button
+              class="btn btn-secondary dropdown-toggle"
+              type="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Selecciona un tema
+            </button>
+            <ul class="dropdown-menu">
+              <li>
+                <a class="dropdown-item" href="#"
+                  >Crepúsculo Rioplatense (claro)</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="#"
+                  >Crepúsculo Rioplatense (oscuro)</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Mural urbano (oscuro)</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Mural urbano (claro)</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="mb-3">
+            <button type="submit" class="btn btn-primary">Enviar</button>
+          </div>
+        </form>
       </div>
     </footer>
   </body>
