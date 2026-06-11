@@ -145,7 +145,7 @@ async function cargarClima() {
   try {
     const response = await fetch(
       "https://api.open-meteo.com/v1/forecast" +
-        "?latitude=-34.9&longitude=-56.17&current_weather=true",
+      "?latitude=-34.9&longitude=-56.17&current_weather=true",
     );
     if (!response.ok) throw new Error("Error al obtener el clima");
     const datos = await response.json();
@@ -154,9 +154,11 @@ async function cargarClima() {
     const emoji = emojiClima(datos.current_weather.weathercode);
     clima.innerHTML = `
       <p class="mb-0">
-        ${emoji} Montevideo — <strong>${temp}°C</strong>
+        Montevideo: <strong>${temp}°C</strong>
         &nbsp;|&nbsp;
-        💨 Viento: ${viento} km/h
+        ${emoji}
+        &nbsp;|&nbsp;
+        Viento: ${viento} km/h
       </p>
     `;
   } catch (error) {
