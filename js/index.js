@@ -158,7 +158,7 @@ async function cargarClima() {
         &nbsp;|&nbsp;
         ${emoji}
         &nbsp;|&nbsp;
-        Viento: ${viento} km/h
+        Viento: <strong>${viento} km/h</strong>
       </p>
     `;
   } catch (error) {
