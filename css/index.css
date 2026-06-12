@@ -148,20 +148,3 @@
 .articulos-grid .card-link:hover {
   gap: 0.7rem;
 }
-
-.sobre-autor {
-  margin: 3rem auto;
-  width: 65%;
-  padding-top: 2rem;
-  border-top: 1px solid var(--border);
-}
-
-.sobre-el-autor {
-  background-color: var(--muted);
-  font-size: 0.95rem;
-  padding-left: 1.25rem;
-  margin: 0%;
-  line-height: 1.6;
-  color: var(--text);
-  border-left: 3px solid var(--accent1);
-}
