@@ -23,7 +23,7 @@ async function loadArticle() {
         document.getElementById('article-autor').textContent = `Por ${articulo.autor}`;
         document.getElementById('article-cuerpo').innerHTML = articulo.cuerpo;
         document.getElementById('sobre-el-autor').textContent = articulo.sobreElAutor;
-        document.querySelector('.article-banner').style.backgroundImage = `url('../img/articulo-${id}.png')`;
+        document.querySelector('.article-banner').style.backgroundImage = `url('./img/articulo-${id}.png')`;
 
 
     } catch (error) {
