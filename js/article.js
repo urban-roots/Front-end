@@ -19,6 +19,7 @@ async function loadArticle() {
 
         const articulo = await res.json();
 
+        document.title = "Urban Roots - " + articulo.titulo;
         document.getElementById('article-titulo').textContent = articulo.titulo;
         document.getElementById('article-autor').textContent = `Por ${articulo.autor}`;
         document.getElementById('article-cuerpo').innerHTML = articulo.cuerpo;
