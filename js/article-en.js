@@ -58,6 +58,13 @@ const articulos = [
         autor: "Gonzalo Gomez",
         cuerpo: `<p>When people talk about Uruguayan music, there is one band that always appears in the conversation: El Cuarteto de Nos. What started as a group of friends with crazy ideas, strange humor, and a desire to do something different became one of the most important bands in Uruguay and Latin America. Their story has many changes, challenges, and hard work, but they always kept something special: songs that mix humor, criticism, and thoughts about life.</p>
         <p>The story started in the early 1980s in Montevideo, Uruguay. Brothers Roberto and Ricardo Musso spent many hours creating characters and stories in an imaginary city called "Tajo". Later, those ideas became songs. Together with Santiago Tavella and later Álvaro Pintos, they formed the band.</p>        
+        <figure>
+            <img src="img/cuarteDeNos.jpg" alt="El Cuarteto de Nos" />
+            <figcaption>
+             Los cinco miembros de Cuarteto de Nos. 
+            <cite>Foto: (ABC)</cite>
+            </figcaption>
+        </figure>
         <p>At first, they played cover songs from bands like The Beatles, Led Zeppelin, and The Rolling Stones. Little by little, they started playing their own songs. These songs were full of strange characters, funny situations, and absurd humor. While many bands wanted to sound serious, El Cuarteto de Nos chose a different path.</p>
         <p>During the 1980s and early 1990s, they became more popular in Uruguay. Their original lyrics and unusual style attracted many fans. In 1994, they released the album "Otra Navidad en las Trincheras". This album became a huge success and helped the band reach a new level of popularity in Uruguay.</p>
         <p>After many successful years, the band changed its style again. In 2004, they started working with producer Juan Campodónico. This collaboration led to the album "Raro", released in 2006. The album was a very important moment in their career. The songs still had humor and irony, but the lyrics became deeper and more personal. Songs like "Ya No Sé Qué Hacer Conmigo" helped the band become famous in Argentina, Mexico, Colombia, and many other countries.</p> 
