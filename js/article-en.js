@@ -3,12 +3,13 @@ const params = new URLSearchParams(window.location.search);
 
 // Array con los artículos
 const articulos = [
-  {
-    id: 1,
-    titulo:
-      "The Carnival and its roots: Between the Ritual, the transgression and the memories",
-    autor: "Jairo Severo",
-    cuerpo: `
+    {
+        id: 1,
+        titulo: "The Carnival and its roots: Between the Ritual, the transgression and the memories",
+        autor: "Jairo Severo",
+        cuerpo: `
+            <p><i>This is an english adaptation of my article in spanish. Since I didn't take part on the English assignment for this project, I didn't want to leave this section without an article of mine.</i></p>
+
             <p>Talking about the Uruguayan carnival means you have to go back in time, far beyond the stages of the Teatro de Verano or the llamadas in the Barrio Sur neighborhood. Carnival was not born in Uruguay or in any specific corner of America. It came from outside, with centuries of history behind it. Understanding its true origin, what human need it came to fulfill, and why it survived so many attempts to stop it is the first step to understanding why it remains the country's greatest popular celebration today.</p>
 
             <h2>A Ritual That Comes From Rome</h2>
@@ -32,11 +33,11 @@ const articulos = [
             <p>But the Uruguayan murga is not a copy of the Cádiz chirigotas: it took from them the basic structure (the choir, the critical and playful lyrics, the makeup), but kept adding its own elements. As Ceibal points out, in the "marcha camión", rhythms of the African-origin candombe can be identified. The Uruguayan murga is, in that sense, a blend: Spanish in its structure, African in its rhythm, and deeply Rioplatense in its content.</p>
 
             <figure>
-            <img src="img/carnaval-1.webp" alt="The murga Doña Bastarda performing at a tablado in Montevideo" />
-            <figcaption>
-                The murga Doña Bastarda performing at a tablado in Montevideo.
-                <cite>Photo: Ignacio Sánchez</cite>
-            </figcaption>
+                <img src="img/carnaval-1.webp" alt="The murga Doña Bastarda performing at a tablado in Montevideo" />
+                <figcaption>
+                    The murga Doña Bastarda performing at a tablado in Montevideo.
+                    <cite>Photo: Ignacio Sánchez</cite>
+                </figcaption>
             </figure>
 
             <p>Throughout all of this history, one thing remains the same: carnival has always been a space for criticism and resistance, from the Romans who mocked their senators to the murgas of today that each year dismantle current political affairs with sharp cuplés. The elites of every period tried to control it without ever being able to stop it entirely: the first Bando de Carnaval of Montevideo dates from 1799, and since then, as Alfaro documents, the history of the celebration is also the history of a permanent tension between the people who give themselves the celebration and the authorities who seek to give it to them on their own terms. By the end of the nineteenth century, that process ended in the transformation of the "barbarian carnival" into the "civilized carnival" of orderly parades and neighborhood tablados: what was gained in organization and spectacle was lost in direct participation. Even so, even in its most institutional form, Uruguayan carnival retains something of that original impulse.</p>
@@ -44,125 +45,120 @@ const articulos = [
             <p>Today's carnival retains the shape of the ritual that saw it born, but the society that sustains it is no longer the same: more fragmented, more focused on which political side each murga sings from than on the simple fact that it sings. <strong>Carnival remains, at its core, the way a society looks at itself with a costume on and allows itself to say what it thinks,</strong> only adding that today saying it also means specifying from where.</p>
 
             <figure>
-            <img src="img/carnaval-2.webp" alt="Murga Cayo la Cabra at the inaugural Carnival 2018 parade on Av. 18 de Julio in Montevideo" />
-            <figcaption>
-                Murga Cayo la Cabra at the inaugural Carnival 2018 parade on Av. 18 de Julio in Montevideo.
-                <cite>Photo: Marcelo Bonjour</cite>
-            </figcaption>
+                <img src="img/carnaval-2.webp" alt="Murga Cayo la Cabra at the inaugural Carnival 2018 parade on Av. 18 de Julio in Montevideo" />
+                <figcaption>
+                    Murga Cayo la Cabra at the inaugural Carnival 2018 parade on Av. 18 de Julio in Montevideo.
+                    <cite>Photo: Marcelo Bonjour</cite>
+                </figcaption>
             </figure>
         `,
-    sobreElAutor:
-      "Jairo is an Ánima student. He grew between screens and speakers, and found in the urban uruguayan music the same spirit that takes him to build things from zero: taking something from outside and making it his own.",
-  },
-  {
-    id: 2,
-    titulo: "El Cuarteto de Nos: A Unique Band of Uruguayan Music History",
-    autor: "Gonzalo Gomez",
-    cuerpo: `<p>When people talk about Uruguayan music, there is one band that always appears in the conversation: El Cuarteto de Nos. What started as a group of friends with crazy ideas, strange humor, and a desire to do something different became one of the most important bands in Uruguay and Latin America. Their story has many changes, challenges, and hard work, but they always kept something special: songs that mix humor, criticism, and thoughts about life.</p>
-        <p>The story started in the early 1980s in Montevideo, Uruguay. Brothers Roberto and Ricardo Musso spent many hours creating characters and stories in an imaginary city called "Tajo". Later, those ideas became songs. Together with Santiago Tavella and later Álvaro Pintos, they formed the band.</p>        
-        <figure>
-            <img src="img/cuarteDeNos.jpg" alt="El Cuarteto de Nos" />
-            <figcaption>
-             Los cinco miembros de Cuarteto de Nos. 
-            <cite>Foto: (ABC)</cite>
-            </figcaption>
-        </figure>
-        <p>At first, they played cover songs from bands like The Beatles, Led Zeppelin, and The Rolling Stones. Little by little, they started playing their own songs. These songs were full of strange characters, funny situations, and absurd humor. While many bands wanted to sound serious, El Cuarteto de Nos chose a different path.</p>
-        <p>During the 1980s and early 1990s, they became more popular in Uruguay. Their original lyrics and unusual style attracted many fans. In 1994, they released the album "Otra Navidad en las Trincheras". This album became a huge success and helped the band reach a new level of popularity in Uruguay.</p>
-        <p>After many successful years, the band changed its style again. In 2004, they started working with producer Juan Campodónico. This collaboration led to the album "Raro", released in 2006. The album was a very important moment in their career. The songs still had humor and irony, but the lyrics became deeper and more personal. Songs like "Ya No Sé Qué Hacer Conmigo" helped the band become famous in Argentina, Mexico, Colombia, and many other countries.</p> 
-        <p>After that, they released albums such as "Bipolar", "Porfiado", "Habla Tu Espejo", "Apocalipsis Zombi", "Jueves", and "Lámina Once". With every new album, they gained more fans and strengthened their place in Latin rock music. In 2012, the band won two Latin Grammy Awards thanks to the album "Porfiado" and the song "Cuando Sea Grande". This was one of the most important achievements of their career.</p> 
-        <p>Today, their songs talk about mental health, fears, relationships, technology, and everyday problems. Because of this, both young and older people can connect with their music. They continue performing in theaters and stadiums across many countries.</p>  
-        <p>The story of El Cuarteto de Nos shows that you do not need to follow the rules to be successful. They started as a group of friends making strange and funny songs and became one of the most respected bands in Spanish-speaking rock. With creativity, humor, and lyrics that make people think, they have remained popular for more than forty years and continue to represent Uruguay around the world.</p>
-        
-        <p><strong>Source :</strong></p>
-        <p>https://cuartetodenos.com.uy/bio/
-        <p>https://es.rollingstone.com/la-historia-de-el-cuarteto-de-nos-del-grupo-de-culto-para-universitarios-a-la-proyeccion-global-en-clave-hip-hop-arg/
-        <p>https://www.laorillainfinita.com/el-cuarteto-de-nos
-        <p>https://www.subrayado.com.uy/el-origen-del-cuarteto-nos-los-ganadores-del-grammy-2012-n18532</p>          
+        sobreElAutor: "Jairo is an Ánima student. He grew between screens and speakers, and found in the urban uruguayan music the same spirit that takes him to build things from zero: taking something from outside and making it his own.",
+    },
+    {
+        id: 2,
+        titulo: "El Cuarteto de Nos: A Unique Band of Uruguayan Music History",
+        autor: "Gonzalo Gomez",
+        cuerpo: `
+            <p>When people talk about Uruguayan music, there is one band that always appears in the conversation: El Cuarteto de Nos. What started as a group of friends with crazy ideas, strange humor, and a desire to do something different became one of the most important bands in Uruguay and Latin America. Their story has many changes, challenges, and hard work, but they always kept something special: songs that mix humor, criticism, and thoughts about life.</p>
+            <p>The story started in the early 1980s in Montevideo, Uruguay. Brothers Roberto and Ricardo Musso spent many hours creating characters and stories in an imaginary city called "Tajo". Later, those ideas became songs. Together with Santiago Tavella and later Álvaro Pintos, they formed the band.</p>
+            <figure>
+                <img src="img/cuarteDeNos.png" alt="El Cuarteto de Nos" />
+                <figcaption>
+                    The five members of El Cuarteto de Nos.
+                    <cite>Source: ABC</cite>
+                </figcaption>
+            </figure>
+            <p>At first, they played cover songs from bands like The Beatles, Led Zeppelin, and The Rolling Stones. Little by little, they started playing their own songs. These songs were full of strange characters, funny situations, and absurd humor. While many bands wanted to sound serious, El Cuarteto de Nos chose a different path.</p>
+            <p>During the 1980s and early 1990s, they became more popular in Uruguay. Their original lyrics and unusual style attracted many fans. In 1994, they released the album "Otra Navidad en las Trincheras". This album became a huge success and helped the band reach a new level of popularity in Uruguay.</p>
+            <p>After many successful years, the band changed its style again. In 2004, they started working with producer Juan Campodónico. This collaboration led to the album "Raro", released in 2006. The album was a very important moment in their career. The songs still had humor and irony, but the lyrics became deeper and more personal. Songs like "Ya No Sé Qué Hacer Conmigo" helped the band become famous in Argentina, Mexico, Colombia, and many other countries.</p>
+            <p>After that, they released albums such as "Bipolar", "Porfiado", "Habla Tu Espejo", "Apocalipsis Zombi", "Jueves", and "Lámina Once". With every new album, they gained more fans and strengthened their place in Latin rock music. In 2012, the band won two Latin Grammy Awards thanks to the album "Porfiado" and the song "Cuando Sea Grande". This was one of the most important achievements of their career.</p>
+            <p>Today, their songs talk about mental health, fears, relationships, technology, and everyday problems. Because of this, both young and older people can connect with their music. They continue performing in theaters and stadiums across many countries.</p>  
+            <p>The story of El Cuarteto de Nos shows that you do not need to follow the rules to be successful. They started as a group of friends making strange and funny songs and became one of the most respected bands in Spanish-speaking rock. With creativity, humor, and lyrics that make people think, they have remained popular for more than forty years and continue to represent Uruguay around the world.</p>
+            
+            <p><strong>Sources:</strong></p>
+            <p>https://cuartetodenos.com.uy/bio/
+            <p>https://es.rollingstone.com/la-historia-de-el-cuarteto-de-nos-del-grupo-de-culto-para-universitarios-a-la-proyeccion-global-en-clave-hip-hop-arg/
+            <p>https://www.laorillainfinita.com/el-cuarteto-de-nos
+            <p>https://www.subrayado.com.uy/el-origen-del-cuarteto-nos-los-ganadores-del-grammy-2012-n18532</p>
         `,
-    sobreElAutor:
-      "I'm Gonzalo, an Ánima sturdent. I like working on projects and every challenge that comes my way, because it's never late to continue learning",
-  },
+        sobreElAutor: "I'm Gonzalo, an Ánima student. I like working on projects and every challenge that comes my way, because it's never late to continue learning",
+    },
+    {
+        id: 3,
+        titulo: "The first verses: The beginning of Rap in our country",
+        autor: "Federico Gutierrez",
+        cuerpo: ``,
+        sobreElAutor: "I'm Federico Gutiérrez, a 20 year old Ánima student. I like urban art and learning about the culture of my country.",
+    },
+    {
+        id: 4,
+        titulo: "The History of Plena Music in Uruguay: Sonora Borinquen and Karibe con K",
+        autor: "Nicole Silva",
+        cuerpo: `
+            <p>Have you ever thought about how a rhythm from the Caribbean became very popular in Uruguay? Uruguay is famous for tango and candombe, but many people in the country also love plena music. This genre came from Central America and Puerto Rico in the middle of the 20th century. Over time, it changed and became part of Uruguayan culture. Two important music groups helped to make this happen: Sonora Borinquen, which created the classic style of Uruguayan plena, and Karibe con K, which turned it into a very popular and modern style.</p>
+            <p>To understand the history of plena in Uruguay, we need to go back to 1964, when Carlos Goberna started Sonora Borinquen. Before this group appeared, tropical music in Uruguay was not very well known. Sonora Borinquen played music with strong brass instruments, good percussion, and an elegant sound. They mixed Cuban and Puerto Rican musical styles, but they also adapted their music to what Uruguayan people liked.</p>
+            <p>The group had a big influence on Uruguayan culture. They helped tropical music become accepted by more people, not just in small dance clubs but also in everyday life. Their songs were played at family events and local celebrations. They always dressed well on stage and had a very organized and professional performance. They created a standard for what classic Uruguayan plena should sound like.</p>
 
-  {
-    id: 3,
-    titulo: "The first verses: The beginning of Rap in our country",
-    autor: "Federico Gutierrez",
-    cuerpo: ``,
-    sobreElAutor:
-      "I'm Federico Gutiérrez, a 20 year old Ánima student. I like urban art and learning about the culture of my country.",
-  },
-  {
-    id: 4,
-    titulo:
-      "The History of Plena Music in Uruguay: Sonora Borinquen and Karibe con K",
-    autor: "Nicole Silva",
-    cuerpo: `<p>Have you ever thought about how a rhythm from the Caribbean became very popular in Uruguay? Uruguay is famous for tango and candombe, but many people in the country also love plena music. This genre came from Central America and Puerto Rico in the middle of the 20th century. Over time, it changed and became part of Uruguayan culture. Two important music groups helped to make this happen: Sonora Borinquen, which created the classic style of Uruguayan plena, and Karibe con K, which turned it into a very popular and modern style.</p>
-   <p>To understand the history of plena in Uruguay, we need to go back to 1964, when Carlos Goberna started Sonora Borinquen. Before this group appeared, tropical music in Uruguay was not very well known. Sonora Borinquen played music with strong brass instruments, good percussion, and an elegant sound. They mixed Cuban and Puerto Rican musical styles, but they also adapted their music to what Uruguayan people liked.</p>
-<p>The group had a big influence on Uruguayan culture. They helped tropical music become accepted by more people, not just in small dance clubs but also in everyday life. Their songs were played at family events and local celebrations. They always dressed well on stage and had a very organized and professional performance. They created a standard for what classic Uruguayan plena should sound like.</p>
+            <h2>Karibe con K and the New Popular Style</h2>
+            <p>By the end of the 1980s, the genre needed to change to connect with younger people. In 1989, Eduardo Rivero and Gerardo Nieto created Karibe con K. This group changed plena music completely. They played faster music, used exciting dance choreography, and had young, energetic singers that many fans loved.</p>
+            <p>Karibe con K also changed the type of songs in the genre. Classic plena was about dancing and simple, happy topics. Karibe con K added love songs and emotional stories to fast tropical music. This style became very popular and is sometimes called "romantic plena." The group performed in large stadiums, was played on many radio stations, and became very famous across the country. They showed that tropical music could be as commercially successful as rock or pop music.</p>
+            
+            <figure>
+                <img src="img/karibe_con_k.jpg" alt="Karibe con K" />
+                <figcaption>
+                    Album "Terremoto de Amor"
+                    <cite>Source: La Diaria</cite>
+                </figcaption>
+            </figure>
 
+            <h2>Conclusion</h2>
+            <p>The history of plena in Uruguay shows how music can change and grow over time. From the elegant and classic sound of Sonora Borinquen to the energetic and emotional performances of Karibe con K, this genre has connected with many different people and has become an important part of Uruguayan culture. When people hear music in Montevideo today, they can feel the influence of these two important groups.</p>
 
-<h2>Karibe con K and the New Popular Style:</h2>
-<p>By the end of the 1980s, the genre needed to change to connect with younger people. In 1989, Eduardo Rivero and Gerardo Nieto created Karibe con K. This group changed plena music completely. They played faster music, used exciting dance choreography, and had young, energetic singers that many fans loved.</p>
-<p>Karibe con K also changed the type of songs in the genre. Classic plena was about dancing and simple, happy topics. Karibe con K added love songs and emotional stories to fast tropical music. This style became very popular and is sometimes called "romantic plena." The group performed in large stadiums, was played on many radio stations, and became very famous across the country. They showed that tropical music could be as commercially successful as rock or pop music.</p>
-<figure>
-  <img src="img/karibe_con_k.jpg" alt="karibe con k" />
-  <figcaption>
-    Album terremoto de amor
-    <cite>Fuente:Ladiaria</cite>
-  </figcaption>
-</figure>
-
-<h2>Conclusion:</h2>
-<p>The history of plena in Uruguay shows how music can change and grow over time. From the elegant and classic sound of Sonora Borinquen to the energetic and emotional performances of Karibe con K, this genre has connected with many different people and has become an important part of Uruguayan culture. When people hear music in Montevideo today, they can feel the influence of these two important groups.</p>
-<p><strong>Sources:</strong></p>
-<ul>
-  <li>https://es.wikipedia.org/wiki/Sonora_Borinquen</li>
-  <li>https://grokipedia.com/page/sonora_borinquen</li>
-  <li>Carlos Goberna and sonora Borinquen: Decades of Rhythm</li>
-  <li>The 1990s Tropical Boom: Karibe con k and the pop Revolution.</li>
-</ul>
-`,
-    sobreElAutor:
-      "I am Nicole Silva, a student at Ánima and a music lover. I enjoy discovering new rhythms and learning about the stories behind each artistic expression, since music allows me to connect with my emotions. While writing this article about plena, I was able to delve deeper into a genre that fills me with energy, makes me dance, and helped me understand how a cultural expression can transform and become part of a country's identity",
-  },
+            <p><strong>Sources:</strong></p>
+            <p>https://es.wikipedia.org/wiki/Sonora_Borinquen</p>
+            <p>https://grokipedia.com/page/sonora_borinquen</p>
+            <p>Carlos Goberna and sonora Borinquen: Decades of Rhythm</p>
+            <p>The 1990s Tropical Boom: Karibe con k and the pop Revolution.</p>
+        `,
+        sobreElAutor: "I'm Nicole Silva, a student at Ánima and a music lover. I enjoy discovering new rhythms and learning about the stories behind each artistic expression, since music allows me to connect with my emotions. While writing this article about plena, I was able to delve deeper into a genre that fills me with energy, makes me dance, and helped me understand how a cultural expression can transform and become part of a country's identity",
+    },
 ];
 
 // Función para cargar datos al artículo
 async function loadEnglishArticle() {
-  // Buscar el ?id={número} en la URL
-  const id = params.get("id");
+    // Buscar el ?id={número} en la URL
+    const id = params.get("id");
 
-  // Si no lo encuentra, mostrar error
-  if (!id) {
-    showError("No se especificó un artículo.");
-    return;
-  }
+    // Si no lo encuentra, mostrar error
+    if (!id) {
+        showError("No se especificó un artículo.");
+        return;
+    }
 
-  // Buscar el index del artículo con el parámetro ID (id={número})
-  // .findIndex() devuelve el valor del índice en el array o -1.
-  const idIndex = articulos.findIndex((a) => a.id === Number(id));
+    // Buscar el index del artículo con el parámetro ID (id={número})
+    // .findIndex() devuelve el valor del índice en el array o -1.
+    const idIndex = articulos.findIndex((a) => a.id === Number(id));
 
-  // Si no lo encuentra, mostrar error
-  if (idIndex === -1) {
-    showError("Artículo no encontrado.");
-    return;
-  }
+    // Si no lo encuentra, mostrar error
+    if (idIndex === -1) {
+        showError("Artículo no encontrado.");
+        return;
+    }
 
-  // Extraer artículo del array
-  const articulo = articulos[idIndex];
+    // Extraer artículo del array
+    const articulo = articulos[idIndex];
 
-  // Configurar datos del artículo (título, cuerpo, autor, sobre el autor)
-  document.title = "Urban Roots - " + articulo.titulo;
-  document.getElementById("article-titulo").textContent = articulo.titulo;
-  document.getElementById("article-autor").textContent = `By ${articulo.autor}`;
-  document.getElementById("article-cuerpo").innerHTML = articulo.cuerpo;
-  document.getElementById("sobre-el-autor").textContent = articulo.sobreElAutor;
-  document.querySelector(".article-banner").style.backgroundImage =
-    `url('./img/articulo-${id}.png')`;
+    // Configurar datos del artículo (título, cuerpo, autor, sobre el autor)
+    document.title = "Urban Roots - " + articulo.titulo;
+    document.getElementById("article-titulo").textContent = articulo.titulo;
+    document.getElementById("article-autor").textContent = `By ${articulo.autor}`;
+    document.getElementById("article-cuerpo").innerHTML = articulo.cuerpo;
+    document.getElementById("sobre-el-autor").textContent = articulo.sobreElAutor;
+    document.querySelector(".article-banner").style.backgroundImage =
+        `url('./img/articulo-${id}.png')`;
 }
 
 // Cuando carga la página, ejecutar el código
 document.addEventListener("DOMContentLoaded", () => {
-  loadEnglishArticle();
+    loadEnglishArticle();
 });
