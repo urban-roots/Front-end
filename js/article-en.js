@@ -54,11 +54,26 @@ const articulos = [
     },
     {
         id: 2,
-        titulo: "The History of Uruguayan Rock: Its origins, identity and consolidation",
+        titulo: "El Cuarteto de Nos: A Unique Band of Uruguayan Music History",
         autor: "Gonzalo Gomez",
-        cuerpo: ``,
+        cuerpo: `<p>When people talk about Uruguayan music, there is one band that always appears in the conversation: El Cuarteto de Nos. What started as a group of friends with crazy ideas, strange humor, and a desire to do something different became one of the most important bands in Uruguay and Latin America. Their story has many changes, challenges, and hard work, but they always kept something special: songs that mix humor, criticism, and thoughts about life.</p>
+        <p>The story started in the early 1980s in Montevideo, Uruguay. Brothers Roberto and Ricardo Musso spent many hours creating characters and stories in an imaginary city called "Tajo". Later, those ideas became songs. Together with Santiago Tavella and later Álvaro Pintos, they formed the band.</p>        
+        <p>At first, they played cover songs from bands like The Beatles, Led Zeppelin, and The Rolling Stones. Little by little, they started playing their own songs. These songs were full of strange characters, funny situations, and absurd humor. While many bands wanted to sound serious, El Cuarteto de Nos chose a different path.</p>
+        <p>During the 1980s and early 1990s, they became more popular in Uruguay. Their original lyrics and unusual style attracted many fans. In 1994, they released the album "Otra Navidad en las Trincheras". This album became a huge success and helped the band reach a new level of popularity in Uruguay.</p>
+        <p>After many successful years, the band changed its style again. In 2004, they started working with producer Juan Campodónico. This collaboration led to the album "Raro", released in 2006. The album was a very important moment in their career. The songs still had humor and irony, but the lyrics became deeper and more personal. Songs like "Ya No Sé Qué Hacer Conmigo" helped the band become famous in Argentina, Mexico, Colombia, and many other countries.</p> 
+        <p>After that, they released albums such as "Bipolar", "Porfiado", "Habla Tu Espejo", "Apocalipsis Zombi", "Jueves", and "Lámina Once". With every new album, they gained more fans and strengthened their place in Latin rock music. In 2012, the band won two Latin Grammy Awards thanks to the album "Porfiado" and the song "Cuando Sea Grande". This was one of the most important achievements of their career.</p> 
+        <p>Today, their songs talk about mental health, fears, relationships, technology, and everyday problems. Because of this, both young and older people can connect with their music. They continue performing in theaters and stadiums across many countries.</p>  
+        <p>The story of El Cuarteto de Nos shows that you do not need to follow the rules to be successful. They started as a group of friends making strange and funny songs and became one of the most respected bands in Spanish-speaking rock. With creativity, humor, and lyrics that make people think, they have remained popular for more than forty years and continue to represent Uruguay around the world.</p>
+        
+        <p><strong>Source :</strong></p>
+        <p>https://cuartetodenos.com.uy/bio/
+        <p>https://es.rollingstone.com/la-historia-de-el-cuarteto-de-nos-del-grupo-de-culto-para-universitarios-a-la-proyeccion-global-en-clave-hip-hop-arg/
+        <p>https://www.laorillainfinita.com/el-cuarteto-de-nos
+        <p>https://www.subrayado.com.uy/el-origen-del-cuarteto-nos-los-ganadores-del-grammy-2012-n18532</p>          
+        `,
         sobreElAutor: "I'm Gonzalo, an Ánima sturdent. I like working on projects and every challenge that comes my way, because it's never late to continue learning",
     },
+    
     {
         id: 3,
         titulo: "The first verses: The beginning of Rap in our country",
