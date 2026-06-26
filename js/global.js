@@ -1,3 +1,4 @@
+// Lista de temas
 const themeNames = [
     "mural-dark",
     "mural-light",
@@ -5,6 +6,7 @@ const themeNames = [
     "crepusculo-light",
 ];
 
+// Al cargar la página
 document.addEventListener('DOMContentLoaded', () => {
     /**
      * Tema de colores de la página
@@ -100,3 +102,8 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+
+// Función auxiliar para mostrar un error en el artículo
+function showError(mensaje) {
+    document.getElementById('article-cuerpo').innerHTML = `<p><strong>${mensaje}</strong></p>`;
+}
