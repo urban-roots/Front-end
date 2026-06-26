@@ -3,12 +3,12 @@ const params = new URLSearchParams(window.location.search);
 
 // Array con los artículos
 const articulos = [
-  {
-    id: 1,
-    titulo:
-      "The Carnival and its roots: Between the Ritual, the transgression and the memories",
-    autor: "Jairo Severo",
-    cuerpo: `
+    {
+        id: 1,
+        titulo:
+            "The Carnival and its roots: Between the Ritual, the transgression and the memories",
+        autor: "Jairo Severo",
+        cuerpo: `
             <p><i>This is an english adaptation of my article in spanish. Since I didn't take part on the English assignment for this project, I didn't want to leave this section without an article of mine.</i></p>
 
             <p>Talking about the Uruguayan carnival means you have to go back in time, far beyond the stages of the Teatro de Verano or the llamadas in the Barrio Sur neighborhood. Carnival was not born in Uruguay or in any specific corner of America. It came from outside, with centuries of history behind it. Understanding its true origin, what human need it came to fulfill, and why it survived so many attempts to stop it is the first step to understanding why it remains the country's greatest popular celebration today.</p>
@@ -53,14 +53,13 @@ const articulos = [
                 </figcaption>
             </figure>
         `,
-    sobreElAutor:
-      "Jairo is an Ánima student. He grew between screens and speakers, and found in the urban uruguayan music the same spirit that takes him to build things from zero: taking something from outside and making it his own.",
-  },
-  {
-    id: 2,
-    titulo: "El Cuarteto de Nos: A Unique Band of Uruguayan Music History",
-    autor: "Gonzalo Gomez",
-    cuerpo: `
+        sobreElAutor: "Jairo is an Ánima student. He grew between screens and speakers, and found in the urban uruguayan music the same spirit that takes him to build things from zero: taking something from outside and making it his own.",
+    },
+    {
+        id: 2,
+        titulo: "El Cuarteto de Nos: A Unique Band of Uruguayan Music History",
+        autor: "Gonzalo Gomez",
+        cuerpo: `
             <p>When people talk about Uruguayan music, there is one band that always appears in the conversation: El Cuarteto de Nos. What started as a group of friends with crazy ideas, strange humor, and a desire to do something different became one of the most important bands in Uruguay and Latin America. Their story has many changes, challenges, and hard work, but they always kept something special: songs that mix humor, criticism, and thoughts about life.</p>
             <p>The story started in the early 1980s in Montevideo, Uruguay. Brothers Roberto and Ricardo Musso spent many hours creating characters and stories in an imaginary city called "Tajo". Later, those ideas became songs. Together with Santiago Tavella and later Álvaro Pintos, they formed the band.</p>
             <figure>
@@ -83,33 +82,32 @@ const articulos = [
             <p>https://www.laorillainfinita.com/el-cuarteto-de-nos
             <p>https://www.subrayado.com.uy/el-origen-del-cuarteto-nos-los-ganadores-del-grammy-2012-n18532</p>
         `,
-    sobreElAutor:
-      "I'm Gonzalo, an Ánima student. I like working on projects and every challenge that comes my way, because it's never late to continue learning",
-  },
-  {
-    id: 3,
-    titulo: "The first verses: The beginning of Rap in our country",
-    autor: "Federico Gutierrez",
-    cuerpo: ``,
-    sobreElAutor:
-      "I'm Federico Gutiérrez, a 20 year old Ánima student. I like urban art and learning about the culture of my country.",
-  },
-  {
-    id: 4,
-    titulo:
-      "The History of Plena Music in Uruguay: Sonora Borinquen and Karibe con K",
-    autor: "Nicole Silva",
-    cuerpo: `
-            <p>Have you ever thought about how a rhythm from the Caribbean became very popular in Uruguay? Uruguay is famous for tango and candombe, but many people in the country also love plena music. This genre came from Central America and Puerto Rico in the middle of the 20th century. Over time, it changed and became part of Uruguayan culture. Two important music groups helped to make this happen: Sonora Borinquen, which created the classic style of Uruguayan plena, and Karibe con K, which turned it into a very popular and modern style.</p>
+        sobreElAutor:
+            "I'm Gonzalo, an Ánima student. I like working on projects and every challenge that comes my way, because it's never late to continue learning",
+    },
+    {
+        id: 3,
+        titulo: "The first verses: The beginning of Rap in our country",
+        autor: "Federico Gutierrez",
+        cuerpo: ``,
+        sobreElAutor: "I'm Federico Gutiérrez, a 20 year old Ánima student. I like urban art and learning about the culture of my country.",
+    },
+    {
+        id: 4,
+        titulo:
+            "The History of plena in Uruguay: Sonora Borinquen and Karibe con K",
+        autor: "Nicole Silva",
+        cuerpo: `
+            <p>Have you ever thought about how a rhythm from the Caribbeans became so popular in Uruguay? Uruguay is famous for tango and candombe, but many people in the country also love plena. This genre came from Central America and Puerto Rico in the middle of the 20th century. Over time, it changed and became part of Uruguayan culture. Two important music groups helped to make this happen: Sonora Borinquen, which created the classic style of Uruguayan plena, and Karibe con K, which turned it into a very popular and modern style.</p>
             <p>To understand the history of plena in Uruguay, we need to go back to 1964, when Carlos Goberna started Sonora Borinquen. Before this group appeared, tropical music in Uruguay was not very well known. Sonora Borinquen played music with strong brass instruments, good percussion, and an elegant sound. They mixed Cuban and Puerto Rican musical styles, but they also adapted their music to what Uruguayan people liked.</p>
             <p>The group had a big influence on Uruguayan culture. They helped tropical music become accepted by more people, not just in small dance clubs but also in everyday life. Their songs were played at family events and local celebrations. They always dressed well on stage and had a very organized and professional performance. They created a standard for what classic Uruguayan plena should sound like.</p>
 
             <h2>Karibe con K and the New Popular Style</h2>
-            <p>By the end of the 1980s, the genre needed to change to connect with younger people. In 1989, Eduardo Rivero and Gerardo Nieto created Karibe con K. This group changed plena music completely. They played faster music, used exciting dance choreography, and had young, energetic singers that many fans loved.</p>
+            <p>By the end of the 1980s, the genre needed to change to connect with younger people. In 1989, Eduardo Rivero and Gerardo Nieto created Karibe con K. This group changed plena completely. They played faster music, used exciting dance choreography, and had young, energetic singers that many fans loved.</p>
             <p>Karibe con K also changed the type of songs in the genre. Classic plena was about dancing and simple, happy topics. Karibe con K added love songs and emotional stories to fast tropical music. This style became very popular and is sometimes called "romantic plena." The group performed in large stadiums, was played on many radio stations, and became very famous across the country. They showed that tropical music could be as commercially successful as rock or pop music.</p>
             
             <figure>
-                <img src="img/karibe-1990_1200.jpg" alt="Karibe con K" />
+                <img src="img/karibe-1990_1200w.jpg" alt="Karibe con K" />
                 <figcaption>
                     Album "Terremoto de Amor"
                     <cite>Source: La Diaria</cite>
@@ -125,46 +123,44 @@ const articulos = [
             <p>Carlos Goberna and sonora Borinquen: Decades of Rhythm</p>
             <p>The 1990s Tropical Boom: Karibe con k and the pop Revolution.</p>
         `,
-    sobreElAutor:
-      "I'm Nicole Silva, a student at Ánima and a music lover. I enjoy discovering new rhythms and learning about the stories behind each artistic expression, since music allows me to connect with my emotions. While writing this article about plena, I was able to delve deeper into a genre that fills me with energy, makes me dance, and helped me understand how a cultural expression can transform and become part of a country's identity",
-  },
+        sobreElAutor: "I'm Nicole Silva, a student at Ánima and a music lover. I enjoy discovering new rhythms and learning about the stories behind each artistic expression, since music allows me to connect with my emotions. While writing this article about plena, I was able to delve deeper into a genre that fills me with energy, makes me dance, and helped me understand how a cultural expression can transform and become part of a country's identity",
+    },
 ];
 
 // Función para cargar datos al artículo
 async function loadEnglishArticle() {
-  // Buscar el ?id={número} en la URL
-  const id = params.get("id");
+    // Buscar el ?id={número} en la URL
+    const id = params.get("id");
 
-  // Si no lo encuentra, mostrar error
-  if (!id) {
-    showError("No se especificó un artículo.");
-    return;
-  }
+    // Si no lo encuentra, mostrar error
+    if (!id) {
+        showError("No se especificó un artículo.");
+        return;
+    }
 
-  // Buscar el index del artículo con el parámetro ID (id={número})
-  // .findIndex() devuelve el valor del índice en el array o -1.
-  const idIndex = articulos.findIndex((a) => a.id === Number(id));
+    // Buscar el index del artículo con el parámetro ID (id={número})
+    // .findIndex() devuelve el valor del índice en el array o -1.
+    const idIndex = articulos.findIndex((a) => a.id === Number(id));
 
-  // Si no lo encuentra, mostrar error
-  if (idIndex === -1) {
-    showError("Artículo no encontrado.");
-    return;
-  }
+    // Si no lo encuentra, mostrar error
+    if (idIndex === -1) {
+        showError("Artículo no encontrado.");
+        return;
+    }
 
-  // Extraer artículo del array
-  const articulo = articulos[idIndex];
+    // Extraer artículo del array
+    const articulo = articulos[idIndex];
 
-  // Configurar datos del artículo (título, cuerpo, autor, sobre el autor)
-  document.title = "Urban Roots - " + articulo.titulo;
-  document.getElementById("article-titulo").textContent = articulo.titulo;
-  document.getElementById("article-autor").textContent = `By ${articulo.autor}`;
-  document.getElementById("article-cuerpo").innerHTML = articulo.cuerpo;
-  document.getElementById("sobre-el-autor").textContent = articulo.sobreElAutor;
-  document.querySelector(".article-banner").style.backgroundImage =
-    `url('./img/articulo-${id}.png')`;
+    // Configurar datos del artículo (título, cuerpo, autor, sobre el autor)
+    document.title = "Urban Roots - " + articulo.titulo;
+    document.getElementById("article-titulo").textContent = articulo.titulo;
+    document.getElementById("article-autor").textContent = `By ${articulo.autor}`;
+    document.getElementById("article-cuerpo").innerHTML = articulo.cuerpo;
+    document.getElementById("sobre-el-autor").textContent = articulo.sobreElAutor;
+    document.querySelector(".article-banner").style.backgroundImage = `url('./img/articulo-${id}.png')`;
 }
 
 // Cuando carga la página, ejecutar el código
 document.addEventListener("DOMContentLoaded", () => {
-  loadEnglishArticle();
+    loadEnglishArticle();
 });
