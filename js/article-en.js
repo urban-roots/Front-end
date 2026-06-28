@@ -90,27 +90,30 @@ const articulos = [
     id: 3,
     titulo: "The First Verses",
     autor: "Federico Gutierrez",
-    cuerpo: `<p>Today, many people listen to rap music. You can hear it on the internet, on social media, and even on the radio. But not many people know how rap came to Uruguay and how it became part of the music scene in the country. What started as a cultural movement in New York crossed borders and inspired Uruguayan artists to create their own style and identity.</p>
+    cuerpo: `
+      <p>Today, many people listen to rap music. You can hear it on the internet, on social media, and even on the radio. But not many people know how rap came to Uruguay and how it became part of the music scene in the country. What started as a cultural movement in New York crossed borders and inspired Uruguayan artists to create their own style and identity.</p>
 
-<h2>The origins of rap</h2>
+      <h2>The origins of rap</h2>
 
-<p>Rap was born in the late 1970s in New York City. It was created mainly by Black and Latino communities, who used rhythm and rhymes to talk about their experiences, opinions, and social problems. <strong>One of the songs that helped spread rap around the world was "Rapper's Delight" by The Sugarhill Gang, released in 1979.</strong> Thanks to its success, many people heard rap music for the first time. This song was very important because it showed the world that rap was a powerful and exciting new genre.</p>
+      <p>Rap was born in the late 1970s in New York City. It was created mainly by Black and Latino communities, who used rhythm and rhymes to talk about their experiences, opinions, and social problems. <strong>One of the songs that helped spread rap around the world was "Rapper's Delight" by The Sugarhill Gang, released in 1979.</strong> Thanks to its success, many people heard rap music for the first time. This song was very important because it showed the world that rap was a powerful and exciting new genre.</p>
 
-<h2>The first verses in Uruguay</h2>
+      <h2>The first verses in Uruguay</h2>
 
-<p>In Uruguay, rap started to appear in the 1980s, when young people discovered foreign artists and new music trends. <strong>In 1988, some of the first rap-style verses heard in the country appeared in the album <em>Je-Je</em> by Uruguayan rock musician Renzo Teflón.</strong> Rap was not very well known yet, but these early experiments helped introduce the genre to local audiences and opened the door for future artists.</p>
+      <p>In Uruguay, rap started to appear in the 1980s, when young people discovered foreign artists and new music trends. <strong>In 1988, some of the first rap-style verses heard in the country appeared in the album <em>Je-Je</em> by Uruguayan rock musician Renzo Teflón.</strong> Rap was not very well known yet, but these early experiments helped introduce the genre to local audiences and opened the door for future artists.</p>
 
-<h2>The growth of the movement</h2>
+      <h2>The growth of the movement</h2>
 
-<p>Rap in Uruguay grew faster in the early 1990s. The first local rap groups started to appear, creating a base for the movement. <strong>Two important pioneer groups were Fun You Stupid, formed in 1992, and Víctimas del Sistema.</strong> These groups played an important role in promoting rap and attracting young fans. In 1994, both groups performed at the famous Amarillo club, an important cultural place at the time. Their concerts showed that rap was becoming more popular and that more people were interested in the genre.</p>
+      <p>Rap in Uruguay grew faster in the early 1990s. The first local rap groups started to appear, creating a base for the movement. <strong>Two important pioneer groups were Fun You Stupid, formed in 1992, and Víctimas del Sistema.</strong> These groups played an important role in promoting rap and attracting young fans. In 1994, both groups performed at the famous Amarillo club, an important cultural place at the time. Their concerts showed that rap was becoming more popular and that more people were interested in the genre.</p>
 
-<p>Víctimas del Sistema kept helping rap grow in Uruguay. <strong>In 1997, the group made history by creating what is considered the first recorded rap demo in the country.</strong> This was a very important moment because it helped establish rap as a serious music movement. By the end of the decade, artists were looking for opportunities outside Uruguay. This led to the creation of <strong>Sudacas en Guerra, the first Uruguayan rap collective</strong>, which included groups like La Revolución, El Lado Oscuro, and El Último Xiclón.</p>
+      <p>Víctimas del Sistema kept helping rap grow in Uruguay. <strong>In 1997, the group made history by creating what is considered the first recorded rap demo in the country.</strong> This was a very important moment because it helped establish rap as a serious music movement. By the end of the decade, artists were looking for opportunities outside Uruguay. This led to the creation of <strong>Sudacas en Guerra, the first Uruguayan rap collective</strong>, which included groups like La Revolución, El Lado Oscuro, and El Último Xiclón.</p>
 
-<h2>A genre that keeps evolving</h2>
+      <h2>A genre that keeps evolving</h2>
 
-<p>During the 2000s, rap continued to grow with the appearance of new collectives and groups. Better recording techniques and more opportunities to perform helped the genre reach more people. Today, rap is an important part of the music scene in Uruguay. The story of Uruguayan rap shows how a genre born in New York was adopted and transformed by local artists, creating something unique that continues to evolve and inspire new generations.</p>
+      <p>During the 2000s, rap continued to grow with the appearance of new collectives and groups. Better recording techniques and more opportunities to perform helped the genre reach more people. Today, rap is an important part of the music scene in Uruguay. The story of Uruguayan rap shows how a genre born in New York was adopted and transformed by local artists, creating something unique that continues to evolve and inspire new generations.</p>
 
-<p><strong>Sources:</strong> Federico Gutierrez, <em>The Origins of Rap in Uruguay</em> · Raíces Urbanas</p>`,
+      <p><strong>Sources:</strong></p>
+      <p>Uno</p>
+    `,
     sobreElAutor:
       "I'm Federico Gutiérrez, a 20 year old Ánima student. I like urban art and learning about the culture of my country.",
   },
