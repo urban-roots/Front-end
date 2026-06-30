@@ -76,7 +76,7 @@
 /* Nuestros artículos */
 .articulos-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, 360px);
+  grid-template-columns: repeat(auto-fit, minmax(260px, 360px));
   justify-content: center;
   gap: 1.5rem;
   padding: 0 2rem;
@@ -148,4 +148,15 @@
 
 .articulos-grid .card-link:hover {
   gap: 0.7rem;
+}
+
+@media (max-width: 767px) {
+  .hero {
+    padding: 1.25rem;
+  }
+
+  .articulos-grid {
+    grid-template-columns: 1fr;
+    padding: 0 1rem;
+  }
 }
