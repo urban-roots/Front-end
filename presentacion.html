@@ -437,19 +437,13 @@
 
       @keyframes pulso-glow {
         0% {
-          filter:
-            drop-shadow(0 0 0px transparent)
-            drop-shadow(0 0 0px transparent);
+          filter: drop-shadow(0 0 0px transparent) drop-shadow(0 0 0px transparent);
         }
         50% {
-          filter:
-            drop-shadow(-5px 0 9px var(--glow-color, var(--accent1)))
-            drop-shadow(6px 0 8px var(--glow-secondary-color, #d95793));
+          filter: drop-shadow(-5px 0 9px var(--glow-color, var(--accent1))) drop-shadow(6px 0 8px var(--glow-secondary-color, #d95793));
         }
         100% {
-          filter:
-            drop-shadow(0 0 0px transparent)
-            drop-shadow(0 0 0px transparent);
+          filter: drop-shadow(0 0 0px transparent) drop-shadow(0 0 0px transparent);
         }
       }
 
@@ -532,7 +526,15 @@
             </li>
             <li>
               <strong>Backend:</strong> Node.js con Express, una API REST que sirve los artículos
-              <span class="sub">Endpoint GET /articulos/:id, los datos se inyectan dinámicamente en la página</span>
+              <span class="sub">Endpoint GET /articulos/:id para inyectar dinámicamente los datos en la página</span>
+            </li>
+            <li>
+              <strong>Gestión del proyecto:</strong> WhatsApp, Trello
+              <span class="sub">WhatsApp como medio de avisos y discusión de ideas, y Trello para poder organizar y trabajar en las tareas</span>
+            </li>
+            <li>
+              <strong>Herramientas de trabajo:</strong> Visual Studio Code, Vercel
+              <span class="sub">Vercel es la plataforma que nos permitió desplegar la página de forma rápida</span>
             </li>
           </ul>
         </div>
@@ -564,8 +566,8 @@
               <span class="sub">El usuario elige su tema desde el footer y la elección persiste entre visitas</span>
             </li>
             <li>
-              <strong>Tipografía:</strong> Inter para cuerpo, Syne para Mural Urbano, Playfair Display para Crepúsculo Rioplatense
-              <span class="sub">La fuente cambia con el skin: la personalidad visual se transforma junto al color</span>
+              <strong>Tipografía:</strong> Inter para el cuerpo, Syne para Mural Urbano, Playfair Display para Crepúsculo Rioplatense
+              <span class="sub">La fuente cambia con el tema: la personalidad visual se transforma junto al color</span>
             </li>
             <li><strong>Layout:</strong> Header sticky (permanece en el tope de la pantalla siempre), cuerpo de artículo centrado al 65% del ancho de pantalla, artículos listados en una grilla dinámica y pié de página con formulario de suscripción</li>
             <li><strong>Elementos visuales:</strong> Rotación de imágenes con una superposición de graffiti, botones con estilos variados, tarjetas de artículos, banner de artículo con imagen de fondo y overlay semitransparente en los artículos</li>
