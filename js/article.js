@@ -1,5 +1,5 @@
-// URL de la API. Corre en el puerto 3000 por defecto.
-const API_URL = 'http://localhost:3000';
+// URL de la API. Ahora mismo está deployada en https://urban-roots-backend-api.vercel.app/
+const API_URL = 'https://urban-roots-backend-api.vercel.app';
 
 async function loadArticle() {
     const params = new URLSearchParams(window.location.search);
