@@ -394,10 +394,105 @@
       .slide-design .bullets li .sub {
         font-size: 0.8em;
       }
+
+      /* Logo flotante esquina */
+      @keyframes levitar {
+        0% {
+          transform: translate(0px, 0px) rotate(-0.5deg);
+        }
+        30% {
+          transform: translate(3px, -4px) rotate(0.3deg);
+        }
+        60% {
+          transform: translate(-2px, -6px) rotate(-0.3deg);
+        }
+        100% {
+          transform: translate(1px, -3px) rotate(0.5deg);
+        }
+      }
+
+      #logo-flotante {
+        position: fixed;
+        top: 2.25rem;
+        right: 2.5rem;
+        width: 100px;
+        height: 100px;
+        object-fit: contain;
+        z-index: 100;
+        animation: levitar 4s ease-in-out infinite alternate;
+        transition: opacity 0.4s ease;
+        cursor: default;
+        pointer-events: none;
+      }
+
+      /* Logo demo en diapo de recorrido */
+      @keyframes flotar-demo {
+        0% {
+          transform: translateY(0px);
+        }
+        100% {
+          transform: translateY(-12px);
+        }
+      }
+
+      @keyframes pulso-glow {
+        0% {
+          filter:
+            drop-shadow(0 0 0px transparent)
+            drop-shadow(0 0 0px transparent);
+        }
+        50% {
+          filter:
+            drop-shadow(-5px 0 9px var(--glow-color, var(--accent1)))
+            drop-shadow(6px 0 8px var(--glow-secondary-color, #d95793));
+        }
+        100% {
+          filter:
+            drop-shadow(0 0 0px transparent)
+            drop-shadow(0 0 0px transparent);
+        }
+      }
+
+      #logo-link {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        --glow-color: var(--accent1);
+        --glow-secondary-color: #d95793;
+        animation:
+          flotar-demo 2.5s ease-in-out infinite alternate,
+          pulso-glow 2s ease-in-out infinite;
+      }
+
+      #logo-demo-wrapper {
+        display: none;
+        cursor: pointer;
+        width: min(100%, 400px);
+        aspect-ratio: 1 / 1;
+        -webkit-mask-image: url("./img/logo.png");
+        -webkit-mask-size: contain;
+        -webkit-mask-repeat: no-repeat;
+        -webkit-mask-position: center;
+        mask-image: url("./img/logo.png");
+        mask-size: contain;
+        mask-repeat: no-repeat;
+        mask-position: center;
+      }
+
+      #logo-demo-inner {
+        width: 100%;
+        height: 100%;
+        background-image: url("./img/logo.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
     </style>
   </head>
   <body>
     <div id="stage" class="theme-mural-dark">
+      <img id="logo-flotante" src="./img/logo.png" alt="Urban Roots logo" />
       <div id="progress"></div>
       <div id="slides-wrapper">
         <!-- 1. PORTADA -->
@@ -479,14 +574,21 @@
         </div>
 
         <!-- 6. RECORRIDO -->
-        <div class="slide slide-content" data-index="5">
-          <span class="slide-section-label">04 · Demo</span>
-          <h2>Recorrido por la <span>revista</span></h2>
-          <ul class="bullets">
-            <li><strong>Inicio:</strong> hero section con carrusel, sección "Sobre nosotros", grilla de artículos en español e inglés</li>
-            <li><strong>Artículos:</strong> banner con imagen de fondo, cuerpo con texto, títulos e imágenes con pie de foto, sección "Sobre el autor"</li>
-            <li><strong>General:</strong> header sticky con barra de navegación, footer con formulario para newsletter y selector de tema</li>
-          </ul>
+        <div class="slide slide-content" data-index="5" style="flex-direction: row; align-items: center; gap: 4rem">
+          <div style="flex: 1; display: flex; flex-direction: column">
+            <span class="slide-section-label">04 · Demo</span>
+            <h2>Recorrido por la <span>revista</span></h2>
+            <ul class="bullets">
+              <li><strong>Inicio:</strong> hero section con carrusel, sección "Sobre nosotros", grilla de artículos en español e inglés</li>
+              <li><strong>Artículos:</strong> banner con imagen de fondo, cuerpo con texto, títulos e imágenes con pie de foto, sección "Sobre el autor"</li>
+              <li><strong>General:</strong> header sticky con barra de navegación, footer con formulario para newsletter y selector de tema</li>
+            </ul>
+          </div>
+          <div id="logo-link">
+            <div id="logo-demo-wrapper" onclick="window.open('https://urban-roots-frontend.vercel.app', '_blank')" title="Abrir Urban Roots">
+              <div id="logo-demo-inner"></div>
+            </div>
+          </div>
         </div>
 
         <!-- 7. ARTÍCULOS -->
@@ -659,6 +761,26 @@
         }, closingThemeIntervalMs);
       }
 
+      const logoFlotante = document.getElementById("logo-flotante");
+      const logoLink = document.getElementById("logo-link");
+      const logoDemoWrapper = document.getElementById("logo-demo-wrapper");
+      const DEMO_SLIDE = 5;
+
+      function updateLogo(index) {
+        const theme = themes[getThemeForSlide(index)];
+        logoLink.style.setProperty("--glow-color", theme.accent);
+
+        if (index === DEMO_SLIDE) {
+          logoFlotante.style.opacity = "0";
+          setTimeout(() => {
+            logoDemoWrapper.style.display = "block";
+          }, 300);
+        } else {
+          logoFlotante.style.opacity = "1";
+          logoDemoWrapper.style.display = "none";
+        }
+      }
+
       function goTo(next) {
         if (next < 0 || next >= total) return;
         const prevSlide = slides[current];
@@ -672,12 +794,17 @@
         const themeIdx = getThemeForSlide(current);
         stage.className = themes[themeIdx].cls;
         themeLabel.textContent = themes[themeIdx].label;
+        if (current === DEMO_SLIDE) {
+          logoLink.style.setProperty("--glow-color", themes[themeIdx].accent);
+        }
 
         if (current === closingSlideIndex) {
           startClosingCycle(themeIdx);
         } else {
           stopClosingCycle();
         }
+
+        updateLogo(current);
 
         progress.style.width = ((current + 1) / total) * 100 + "%";
         counter.textContent = current + 1 + " / " + total;
@@ -693,6 +820,7 @@
       });
 
       progress.style.width = (1 / total) * 100 + "%";
+      updateLogo(0);
     </script>
   </body>
 </html>
