@@ -28,6 +28,14 @@ document.addEventListener('DOMContentLoaded', () => {
     /**
      * Header
      */
+
+    // Cuando hagas click en el logo, te lleve a la página principal.
+    const logo = document.getElementsByClassName("logo")[0]; // [0] para elegir el primero, aunque no hay más.
+
+    logo.addEventListener("click", () => {
+        window.location.href = "/";
+    });
+
     const menu = document.getElementById("menu");
 
     // Cerrar menú al seleccionar una opción en tablet
